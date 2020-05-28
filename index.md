@@ -1,37 +1,33 @@
-## Welcome to GitHub Pages
+## Welcome to ltsyqo!
 
-You can use the [editor on GitHub](https://github.com/ltsyqo/ltsyqo.github.io/edit/master/index.md) to maintain and preview the content for your website in Markdown files.
-
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
-
-### Markdown
-
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
-
+###  Greatest books ever
 ```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
+- "Der Steppenwolf" by Hermann Hesse
+- "Aus dem Leben eines Taugenichts" by Joseph von Eicherdorff
+- "Die Deutschstunde" by Siegfried Lenz
+- "Melodien" by Helmut Krausser
+- "War and Peace" by Lew Tolstoy
+- "Crime and Punishment" by Fjodor M. Dostojewskij
+- "The Hitchhiker's Guide to the Galaxy" by Douglas Adams
+- "Winnie-the-Pooh" by A. A. Milne 
+- tbc.
 ```
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
+### Greatest albums ever
+```markdown
+- "Abbey Road" by The Beatles
+- "Surfer Rosa" by The Pixies
+- "Goo" by Sonic Youth
+- "Digital ist besser" by Tocotronic
+```
 
-### Jekyll Themes
+### Greatest songs ever
+```markdown
+- "Hey" by The Pixies
+- "Wish you were here" by Pink Floyd
+- tbc
+```
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/ltsyqo/ltsyqo.github.io/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
+**Created: Spring 2020**
 
-### Support or Contact
 
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
