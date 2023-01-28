@@ -5,12 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Black Jack!</title>
 
-    <link
-      rel="stylesheet"
-      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
-      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
-      crossorigin="anonymous"
-    />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -21,40 +15,40 @@
   </head>
 
   <body>
-    <h1 class="title">BLACK JACK!</h1>
+    <h1>BLACK JACK!</h1>
     <div class="main">
       <div class="row-1">
         <div id="player-deck">
           <h2>Player: <span id="ppoints">0</span></h2>
         </div>
         <div id="dealer-deck">
-          <h2>Dealer: <span id="dpoints"></span></h2>
+          <h2>Dealer: <span id="dpoints">0</span></h2>
         </div>
+     
       </div>
 
       <div class="row-2">
         <div class="buttons">
-          <button onclick="game.hit()" class="btn-lg btn-primary" id="hitbtn">
+          <button onclick="game.hit()"  id="hitbtn">
             Hit
           </button>
           <button
             onclick="game.stand()"
-            class="btn-lg btn-warning"
             id="standbtn"
           >
             Stand
           </button>
           <button
             onclick="location.reload()"
-            class="btn-lg btn-danger"
             id="dealbtn"
           >
             Deal
           </button>
         </div>
       </div>
-    </div>
+      <div class="row-3" id="winner"></div>
 
+    </div>
     <script src="./app.js"></script>
   </body>
 </html>

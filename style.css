@@ -1,32 +1,25 @@
 
 
 body {
-  font-family: "Krona One", sans-serif;
+  font-family: "Lobster", sans-serif;
+  font-size: 1.5rem;
+  background-color: rgb(17, 10, 2);
+
 }
 
-.parent {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: 1fr 5fr 1fr;
-  grid-column-gap: 0px;
-  grid-row-gap: 0px;
-  }
 
-.title{
+h1{
   text-align: center;
-  background: rgb(232,224,117);
-  background: linear-gradient(0deg, rgba(232,224,117,1) 0%, rgba(1,1,1,1) 15%);
   color: gold;
-  font-family: 'Pushster', cursive;
   padding: .5rem;
-  font-size: 6rem;
-  word-spacing: 2rem;
-  letter-spacing: .3rem;
+  font-size: 3rem;
+  letter-spacing: .7rem;
 }
 
 .main{
   margin: auto;
   text-align: center;
+  color: red;
 }
 
 .row-1{
@@ -54,6 +47,11 @@ body {
 
 #player-deck{
   border-right:  black solid 1px;
+  color: red;
+}
+
+#dealer-deck{
+  color: blue
 }
 
 #player-deck img, #dealer-deck img{
@@ -66,6 +64,14 @@ body {
   display: flex;
   justify-content: space-around;
   margin-bottom: 3rem;
+}
+
+.row-3{
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 3rem;
+  font-size: 4rem;
+  color: orange;
 }
 
 .buttons{
@@ -91,6 +97,7 @@ body {
   cursor: pointer;
   box-shadow: black 0px 0px 5px 2px;
 }
+
 
 @media screen and (max-width:740px){
   html{

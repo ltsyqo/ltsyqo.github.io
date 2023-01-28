@@ -57,22 +57,45 @@ class Game {
     } else {
       activePlayer.points += currentValue;
     }
+    
+    if (activePlayer.points >= 21) {
+      document.querySelector("#hitbtn").disabled = true;
+      document.querySelector("#standbtn").disabled = true;
+      this.stand()
+    }
 
     document.querySelector(activePlayer["score"]).innerHTML =
       activePlayer.points;
   }
 
+  checkWinner() {
+    let msg = ""
+    if (this.player.points <= 21 && this.player.points > this.dealer.points || this.dealer.points > 21) {
+      msg = "You won!"
+    } else if (this.dealer.points <= 21 && this.dealer.points > this.player.points || this.player.points > 21)  {
+      msg = "Dealer won!"
+    } 
+    
+    document.querySelector("#winner").innerHTML =msg;
+  }
+
   hit() {
     this.drawCard(player);
     document.querySelector("#standbtn").disabled = false;
-    document.querySelector("#dealbtn").disabled = false;
   }
 
   stand() {
     while (dealer.points <= 17 && dealer.points <= player.points) {
       this.drawCard(dealer);
     }
+    document.querySelector("#hitbtn").disabled = true;
+    document.querySelector("#standbtn").disabled = true;
+    document.querySelector("#dealbtn").disabled = false;
+    this.checkWinner()
   }
+
+  
+
 }
 
 // Game start
@@ -83,3 +106,4 @@ const player = game["player"];
 const dealer = game["dealer"];
 document.querySelector("#standbtn").disabled = true;
 document.querySelector("#dealbtn").disabled = true;
+
